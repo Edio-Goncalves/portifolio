@@ -1,0 +1,10 @@
+.introduce-container {
+  background-color: aqua;
+  padding-top: 74px;
+  height: calc(100vh - 74px);
+}
+.teste {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
