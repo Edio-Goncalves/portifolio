@@ -1,6 +1,6 @@
 .header-container {
   background-color: var(--color-b-third);
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: fixed;
   right: 0;
   left: 0;
@@ -9,10 +9,11 @@
 }
 
 /* logo */
-.logo {
+.logo-menu {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 2px solid var(--color-o-first);
 }
 
 /* header */
