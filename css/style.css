@@ -1,0 +1,28 @@
+/* page wrapper */
+.main-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  background-color: aqua;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(240, 236, 207);
+}
+
+/* nav */
+.nav-container {
+  max-width: 600px;
+  width: 80%;
+}
+
+/* menu */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(170, 241, 206);
+}
