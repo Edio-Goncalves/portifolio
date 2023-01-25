@@ -1,10 +1,11 @@
-/* page wrapper */
 .header-container {
   background-color: var(--color-b-third);
   font-size: 1rem;
   position: fixed;
   right: 0;
   left: 0;
+  border-bottom: 2px solid var(--color-b-first);
+  box-sizing: border-box;
 }
 
 /* logo */
