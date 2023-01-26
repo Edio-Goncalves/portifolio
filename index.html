@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/css/experiences.css" />
     <link rel="stylesheet" href="/css/skills.css" />
     <link rel="stylesheet" href="/css/project.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
 
     <script defer src="script.js"></script>
   </head>
@@ -172,10 +173,24 @@
       </section>
 
       <!-- CONTACT -->
-
       <section class="contact-container">
         <div class="main-width contact-wrapper">
           <h1 class="main-title">Contato</h1>
+          <form class="main-form">
+            <label class="label" for="name">Nome</label>
+            <input class="input" type="text" id="name" />
+            <label class="label" for="name">Email</label>
+            <input class="input" type="email" id="email" />
+            <label class="label" for="mensage">Mensagem</label>
+            <textarea
+              class="input textarea"
+              name="mensage"
+              id="mensage"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input class="main-button" type="submit" value="Enviar" />
+          </form>
         </div>
       </section>
     </main>
