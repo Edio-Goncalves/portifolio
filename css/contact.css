@@ -2,10 +2,7 @@
   background-color: rgb(65, 65, 65);
   padding-top: 50px;
   padding-bottom: 80px;
-  border-bottom: 4px solid var(--color-b-second);
-}
-
-.contact-wrapper {
+  border-bottom: 7px solid var(--color-b-second);
 }
 
 .contact-wrapper h1 {

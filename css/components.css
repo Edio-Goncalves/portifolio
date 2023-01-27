@@ -5,46 +5,6 @@
   padding-right: 0.5rem;
 }
 
-.main-title {
-  font-size: 4rem;
-  margin-bottom: 50px;
-  color: var(--color-b-first);
-  text-align: center;
-}
-
-.main-subtitle {
-  font-size: 2.5rem;
-  color: var(--color-b-first);
-}
-
-.skills-box {
-  background-color: var(--color-o-fourth);
-  width: 120px;
-  height: 120px;
-  border: 3px solid var(--color-b-fourth);
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.project-box {
-  box-sizing: border-box;
-  background-color: var(--color-o-fourth);
-  width: 350px;
-  height: 280px;
-  border: 3px solid var(--color-b-fourth);
-  border-radius: 1.5rem;
-}
-
-.git-button {
-  background-color: var(--color-b-first);
-  color: white;
-  font-size: 2rem;
-  padding: 15px 35px;
-  margin-top: 30px;
-  border-radius: 30px;
-}
-
 .label {
   font-size: 1.5rem;
   color: white;
@@ -65,14 +25,68 @@
   height: 300px;
 }
 
+/* tilte and subtitle */
+.main-title {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  color: var(--color-b-first);
+  text-align: center;
+}
+
+.main-subtitle {
+  font-size: 2.5rem;
+  color: var(--color-b-first);
+}
+
+/* boxes */
+.skills-box {
+  background-color: var(--color-o-fourth);
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--color-b-fourth);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-box {
+  box-sizing: border-box;
+  background-color: var(--color-o-fourth);
+  width: 350px;
+  height: 280px;
+  border: 3px solid var(--color-b-fourth);
+  border-radius: 1.5rem;
+}
+
+.icon-footer {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 17px;
+  border: 1.5px solid var(--color-b-second);
+  box-shadow: 2px 2px 10px rgba(69, 134, 255, 0.3);
+}
+
+/* buttons */
 .main-button {
-  max-width: 300px;
-  font-size: 1.5rem;
-  font-weight: 700;
   background-color: var(--color-b-first);
-  border: 2px solid white;
+  color: var(--color-o-fifth);
+  border: 2px solid var(--color-o-fifth);
   border-radius: 35px;
-  color: white;
-  padding: 20px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.-git {
+  font-size: 2rem;
+  padding: 15px 45px;
+  margin-top: 30px;
+}
+
+.-form {
+  max-width: 270px;
+  font-size: 1.5rem;
+  padding: 15px;
   margin-left: 20px;
 }
