@@ -71,14 +71,11 @@
 }
 .icon-footer.-github {
   filter: contrast(0);
-  /* transition: all 700ms; */
 }
 .icon-footer:hover {
   filter: saturate(1);
   filter: contrast(1);
   transform: rotate(360deg);
-
-  /* transition: all 700ms; */
 }
 
 /* buttons */
@@ -89,6 +86,7 @@
   border-radius: 35px;
   letter-spacing: 1.2px;
   font-weight: 700;
+  transition: all 400ms cubic-bezier(0.81, -0.14, 0.12, 1.11);
 }
 
 .-git {
@@ -102,4 +100,10 @@
   font-size: 1.5rem;
   padding: 15px;
   margin-left: 20px;
+}
+.main-button:hover {
+  color: var(--color-b-first);
+  background-color: #fff;
+  border: 2px solid var(--color-b-first);
+  scale: 1.02;
 }
