@@ -22,7 +22,7 @@
 
 .textarea {
   margin-bottom: 20px;
-  height: 300px;
+  height: 230px;
 }
 
 /* tilte and subtitle */
@@ -62,10 +62,23 @@
   width: 60px;
   height: 60px;
   padding: 5px;
-  margin: 20px;
+  margin: 15px;
   border-radius: 17px;
   border: 1.5px solid var(--color-b-second);
-  box-shadow: 2px 2px 10px rgba(69, 134, 255, 0.3);
+  box-shadow: 5px 5px 10px rgba(69, 134, 255, 0.3);
+  filter: saturate(0);
+  transition: all 700ms cubic-bezier(0.62, -0.19, 0.45, 1.6);
+}
+.icon-footer.-github {
+  filter: contrast(0);
+  /* transition: all 700ms; */
+}
+.icon-footer:hover {
+  filter: saturate(1);
+  filter: contrast(1);
+  transform: rotate(360deg);
+
+  /* transition: all 700ms; */
 }
 
 /* buttons */
