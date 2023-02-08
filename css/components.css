@@ -5,105 +5,74 @@
   padding-right: 0.5rem;
 }
 
-.label {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 5px;
+/* wrappers */
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.main-wrapper.-gap {
+  gap: 50px;
 }
 
-.input {
-  font-size: 1.2rem;
-  padding: 7px;
-  margin-bottom: 25px;
-  border-radius: 5px;
-  border: 1px solid white;
-  background-color: rgb(241, 241, 241);
+.wrapper-description {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.textarea {
-  margin-bottom: 20px;
-  height: 230px;
+.teste {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 30px;
 }
 
-/* tilte and subtitle */
+/* title */
 .main-title {
   font-size: 4rem;
-  margin-bottom: 50px;
-  color: var(--color-b-first);
-  text-align: center;
 }
 
-.main-subtitle {
-  font-size: 2.5rem;
-  color: var(--color-b-first);
-}
-
-/* boxes */
-.skills-box {
-  background-color: var(--color-o-fourth);
-  width: 120px;
-  height: 120px;
-  border: 3px solid var(--color-b-fourth);
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.project-box {
-  box-sizing: border-box;
-  background-color: var(--color-o-fourth);
-  width: 350px;
-  height: 280px;
-  border: 3px solid var(--color-b-fourth);
-  border-radius: 1.5rem;
-}
-
-.icon-footer {
-  width: 60px;
-  height: 60px;
-  padding: 5px;
-  margin: 15px;
-  border-radius: 17px;
-  border: 1.5px solid var(--color-b-second);
-  box-shadow: 5px 5px 10px rgba(69, 134, 255, 0.3);
-  filter: saturate(0);
-  transition: all 700ms cubic-bezier(0.62, -0.19, 0.45, 1.6);
-}
-.icon-footer.-github {
-  filter: contrast(0);
-}
-.icon-footer:hover {
-  filter: saturate(1);
-  filter: contrast(1);
-  transform: rotate(360deg);
-}
-
-/* buttons */
-.main-button {
-  background-color: var(--color-b-first);
-  color: var(--color-o-fifth);
-  border: 2px solid var(--color-o-fifth);
-  border-radius: 35px;
-  letter-spacing: 1.2px;
-  font-weight: 700;
-  transition: all 400ms cubic-bezier(0.81, -0.14, 0.12, 1.11);
-}
-
-.-git {
-  font-size: 2rem;
-  padding: 15px 45px;
-  margin-top: 30px;
-}
-
-.-form {
-  max-width: 270px;
+.main-title.-portfolio {
   font-size: 1.5rem;
-  padding: 15px;
-  margin-left: 20px;
+  display: inline;
+  color: white;
+  padding: 7px 10px;
+  background-color: rgb(46, 46, 46);
 }
-.main-button:hover {
-  color: var(--color-b-first);
-  background-color: #fff;
-  border: 2px solid var(--color-b-first);
-  scale: 1.02;
+
+/* text */
+.main-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
 }
+.hello {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(0, 143, 136);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.name {
+  font-family: "Righteous", cursive;
+  font-size: 2.8rem;
+  line-height: 1.2em;
+}
+.about {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+/* button */
+.main-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(0, 143, 136);
+}
+
+/* icons */
