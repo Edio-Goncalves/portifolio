@@ -24,11 +24,16 @@
   justify-content: space-between;
 }
 
-.teste {
+.wrapper-description .-container {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   gap: 30px;
+}
+
+.wrapper-media {
+  display: flex;
+  gap: 10px;
 }
 
 /* title */
@@ -48,6 +53,7 @@
 .main-text {
   font-family: "Work Sans", sans-serif;
   font-size: 1.8rem;
+  color: rgb(46, 46, 46);
 }
 .hello {
   font-family: "Work Sans", sans-serif;
@@ -63,16 +69,22 @@
 .about {
   font-family: "Work Sans", sans-serif;
   font-size: 1.3rem;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: 300;
 }
 
 /* button */
 .main-button {
-  padding: 10px 20px;
-  font-size: 1.5rem;
+  padding: 15px 30px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: white;
   background-color: rgb(0, 143, 136);
 }
 
 /* icons */
+
+.wrapper-media .-ico {
+  width: 50px;
+}
