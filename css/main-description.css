@@ -1,0 +1,10 @@
+.main-description {
+  height: 100vh;
+}
+
+.main-description .img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 100vh;
+  background-image: url(/images/avatar_a.png);
+}

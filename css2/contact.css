@@ -1,0 +1,15 @@
+.contact-container {
+  background-color: rgb(65, 65, 65);
+  padding-top: 50px;
+  padding-bottom: 80px;
+  border-bottom: 7px solid var(--color-b-second);
+}
+
+.contact-wrapper h1 {
+  color: white;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+}

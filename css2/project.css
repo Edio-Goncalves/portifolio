@@ -1,0 +1,19 @@
+.project-container {
+  background-color: var(--color-b-fifth);
+  padding-top: 50px;
+  padding-bottom: 80px;
+  border-bottom: 7px solid var(--color-b-second);
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
