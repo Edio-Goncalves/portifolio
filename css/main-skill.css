@@ -41,3 +41,23 @@
   filter: grayscale(0);
   transform: scale(1);
 }
+.main-skill .content {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+}
+.main-skill .content .contentBx {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: scale(0);
+  opacity: 0;
+}
+.main-skill .content .contentBx.active {
+  transform: scale(1);
+  opacity: 1;
+}
