@@ -1,4 +1,43 @@
 .main-skill {
   height: 100vh;
   background-color: rgb(113, 113, 255);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.main-skill .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-skill .container .icon {
+  position: relative;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-skill .container .icon .iconBx {
+  position: relative;
+  /* width: calc(20% - 10px); */
+  margin: 0 30px 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.main-skill .container .icon .iconBx img {
+  width: 180px;
+  max-width: 100%;
+  filter: grayscale(1);
+  transition: 0.5s;
+  transform: scale(0.8);
+}
+
+.main-skill .container .icon .iconBx:hover img {
+  filter: grayscale(0);
+  transform: scale(1);
 }
