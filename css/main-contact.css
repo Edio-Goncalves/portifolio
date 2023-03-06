@@ -1,0 +1,38 @@
+.colorBk-contact {
+  background-color: rgb(172, 172, 172);
+}
+
+.main-contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: aqua;
+}
+
+.main-contact .wrapper-contact {
+  width: 100%;
+}
+
+.main-contact .container {
+  display: flex;
+  background-color: azure;
+}
+
+.main-contact .container .contactInfo {
+  width: 33%;
+  min-height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.main-contact .container .contactForm {
+  width: 67%;
+  min-height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
