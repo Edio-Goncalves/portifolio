@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 10px;
 }
 .main-contact .container .contactInfo ul.info li span:nth-child(1) {
   width: 30px;
@@ -66,11 +67,98 @@
   margin-left: 10px;
 }
 
-/* lado do form */
+/* lado do form ################################### */
 .main-contact .container .contactForm {
   width: 67%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+}
+
+.main-contact .container .contactForm h2 {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.main-contact .container .contactForm .formBx {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.main-contact .container .contactForm .formBx .inputBx {
+  position: relative;
+  margin-bottom: 35px;
+}
+.main-contact .container .contactForm .formBx .inputBx.w50 {
+  width: 47%;
+}
+.main-contact .container .contactForm .formBx .inputBx.w100 {
+  width: 100%;
+}
+.main-contact .container .contactForm .formBx .inputBx input,
+.main-contact .container .contactForm .formBx .inputBx textarea {
+  background-color: rgba(82, 82, 82, 0.384);
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.main-contact .container .contactForm .formBx .inputBx textarea {
+  height: 120px;
+}
+.main-contact .container .contactForm .formBx .inputBx span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0 0 2px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.main-contact .container .contactForm .formBx .inputBx input:focus ~ span,
+.main-contact .container .contactForm .formBx .inputBx input:valid ~ span,
+.main-contact .container .contactForm .formBx .inputBx textarea:focus ~ span,
+.main-contact .container .contactForm .formBx .inputBx textarea:valid ~ span {
+  transform: translatey(-22px);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.main-contact .container .contactForm .formBx .inputBx input[type="submit"] {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(73, 73, 73);
+  max-width: 150px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.main-contact
+  .container
+  .contactForm
+  .formBx
+  .inputBx
+  input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(60, 60, 60);
+  letter-spacing: 1.3px;
 }
