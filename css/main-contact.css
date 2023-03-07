@@ -1,14 +1,14 @@
 .colorBk-contact {
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(73, 73, 73);
 }
 
 .main-contact {
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  min-height: calc(100vh - 33px);
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  background-color: aqua;
+  justify-content: space-between;
 }
 
 .main-contact .wrapper-contact {
@@ -17,20 +17,58 @@
 
 .main-contact .container {
   display: flex;
-  background-color: azure;
+  min-height: 75vh;
 }
 
+/* lado do info */
 .main-contact .container .contactInfo {
   width: 33%;
-  min-height: 83vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main-contact .container .contactInfo h2 {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: white;
+  font-weight: 500;
+}
+.main-contact .container .contactInfo ul.info li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: blue;
+  cursor: pointer;
 }
+.main-contact .container .contactInfo ul.info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.main-contact .container .contactInfo ul.info li span:nth-child(1) img {
+  filter: invert(1);
+  max-width: 100%;
+}
+
+.main-contact .container .contactInfo ul.info li span:nth-child(2) {
+  margin-left: 15px;
+  color: white;
+}
+
+.main-contact .container .contactInfo ul.sci {
+  display: flex;
+  align-self: baseline;
+}
+.main-contact .container .contactInfo ul.sci li a img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+/* lado do form */
 .main-contact .container .contactForm {
   width: 67%;
-  min-height: 83vh;
   display: flex;
   align-items: center;
   justify-content: center;
