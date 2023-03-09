@@ -2,6 +2,21 @@
   height: 100vh;
 }
 
+.main-description .wrapper-description {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.main-description .wrapper-description .-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 30px;
+}
+
 .main-description .img {
   flex-shrink: 0;
   width: 400px;

@@ -14,21 +14,6 @@
   gap: 50px;
 }
 
-.wrapper-description {
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.wrapper-description .-container {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 30px;
-}
-
 .wrapper-media {
   display: flex;
   gap: 10px;
@@ -36,6 +21,7 @@
 
 /* title */
 .main-title {
+  position: relative;
   font-size: 4rem;
   font-family: "Righteous", sans-serif;
   background-color: rgb(46, 46, 46);
@@ -43,11 +29,41 @@
 }
 
 .main-title.-portfolio {
+  color: transparent;
   font-size: 1.5rem;
   display: inline;
-  padding: 7px 10px;
+  padding: 0px 15px;
+  line-height: 40px;
   letter-spacing: 5px;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
 }
+.main-title.-portfolio::before {
+  box-sizing: border-box;
+  content: attr(data-text);
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 90%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0px rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgb(255, 255, 255);
+  overflow: hidden;
+  animation: txtPortifolio 6s linear infinite;
+}
+
+@keyframes txtPortifolio {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 92%;
+  }
+}
+
 .main-title.-habilidades {
   font-size: 2rem;
   margin-top: 5vw;
