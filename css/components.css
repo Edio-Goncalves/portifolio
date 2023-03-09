@@ -88,17 +88,52 @@
 }
 
 /* button */
-.main-button {
+.btn-description {
+  position: relative;
   padding: 15px 30px;
   font-family: "Work Sans", sans-serif;
+  border: 2px solid rgb(0, 143, 136);
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
   background-color: rgb(0, 143, 136);
+  transition: 1s;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-description:hover {
+  color: rgb(0, 143, 136);
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.btn-description span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(16deg);
+  background-color: white;
+  transition: width 0.5s, height 1s;
+  z-index: -1;
+}
+.btn-description:hover span {
+  width: 330px;
+  height: 330px;
 }
 
 /* icons */
 
 .wrapper-media .-ico {
-  width: 50px;
+  position: relative;
+  top: 0;
+  width: 45px;
+  transition: 0.1s;
+}
+.wrapper-media .-ico:hover {
+  top: -3px;
+  transition: 0.5s cubic-bezier(0.4, -3, 0.4, -3);
 }
