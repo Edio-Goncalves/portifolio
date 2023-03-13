@@ -1,6 +1,15 @@
+main {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
 .main-width {
+  scroll-snap-align: start;
   max-width: 1200px;
   margin: auto;
+  height: 100vh;
 }
 
 /* wrappers */
@@ -35,7 +44,7 @@
   padding: 0px 15px;
   line-height: 40px;
   letter-spacing: 5px;
-  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+  /* -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3); */
 }
 .main-title.-portfolio::before {
   box-sizing: border-box;
@@ -47,7 +56,7 @@
   height: 100%;
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 0px rgba(255, 255, 255, 0.2);
-  border-right: 2px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(255, 255, 255);
   overflow: hidden;
   animation: txtPortifolio 6s linear infinite;
 }
@@ -60,7 +69,7 @@
   }
   70%,
   90% {
-    width: 92%;
+    width: 90%;
   }
 }
 
