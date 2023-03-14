@@ -150,6 +150,10 @@ main {
   height: 330px;
 }
 
+.btnForm {
+  background-color: aqua;
+}
+
 /* icons */
 
 .wrapper-media .-ico {

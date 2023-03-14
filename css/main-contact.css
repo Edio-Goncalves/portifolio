@@ -148,29 +148,70 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.main-contact .container .contactForm .inputBx input[type="submit"] {
-  cursor: pointer;
-  background-color: white;
-  color: rgb(73, 73, 73);
-  max-width: 150px;
-  padding: 12px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  border: none;
-}
-
-.main-contact .container .contactForm .inputBx input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: rgb(60, 60, 60);
-  letter-spacing: 1.3px;
-}
-
 .footer {
   font-family: "Poppins";
   font-size: 0.8rem;
   color: rgba(100, 100, 100, 0.6);
   text-align: center;
   padding-bottom: 2vh;
+}
+
+/* btn enviar */
+.main-contact .container .contactForm .formBx .inputBtn span {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+.main-contact .container .contactForm .formBx .inputBtn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  transition: all 0.5s;
+  box-sizing: content-box;
+}
+.main-contact
+  .container
+  .contactForm
+  .formBx
+  .inputBtn
+  span:nth-child(1)::before {
+  background: linear-gradient(
+    30deg,
+    rgb(223, 223, 223),
+    rgb(73, 73, 73),
+    rgb(73, 73, 73),
+    rgb(223, 223, 223)
+  );
+}
+
+.main-contact .container .contactForm .formBx .inputBtn span:hover:before {
+  inset: -3px;
+  transition: 0.5s;
+}
+
+.main-contact .container .contactForm .formBx .inputBtn span input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  background-color: white;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(73, 73, 73);
+  text-transform: uppercase;
+
+  transition: all 0.5s;
+}
+.main-contact .container .contactForm .formBx .inputBtn span input:hover {
+  font-size: 1.2rem;
+  background-color: rgba(82, 82, 82);
+  color: white;
 }
