@@ -15,3 +15,5 @@ for (var i = 0; i < iconBx.length; i++) {
     this.className = "iconBx active";
   });
 }
+
+/* Menu com sticky */
