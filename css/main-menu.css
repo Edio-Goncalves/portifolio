@@ -29,19 +29,32 @@
 .main-menu ul li a {
   font-size: 1.2rem;
   color: rgb(46, 46, 46);
-  padding: 4px 7px;
+  padding: 4px 10px;
+  transition: 0.5s;
+}
+.main-menu ul li a:hover {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  transition-delay: 0.15s;
+  transition-property: color;
 }
 
 .sticky {
   background: rgb(46, 46, 46);
   border-bottom: 2px solid white;
   height: 50px;
-  transition: 1s;
 }
+
 .posMenu {
   top: 0.5vh;
   transition: 1s;
 }
 .main-menu ul li .lnk {
   color: white;
+  transition-delay: 0.15s;
+  transition-property: color;
+}
+.main-menu ul li .lnk:hover {
+  color: rgb(46, 46, 46);
+  background-color: white;
 }

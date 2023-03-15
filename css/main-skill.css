@@ -1,5 +1,11 @@
 .colorBk-skill {
-  background: linear-gradient(180deg, white 00%, rgb(255, 255, 220) 30%);
+  background: linear-gradient(
+    180deg,
+    white 00%,
+    rgb(255, 255, 220) 20%,
+    rgb(255, 255, 220) 90%,
+    rgb(245, 255, 255) 170%
+  );
 }
 .main-skill {
   font-family: "Poppins", sans-serif;
