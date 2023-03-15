@@ -4,10 +4,8 @@
   justify-content: center;
   width: 100%;
   height: clamp(40px, 40px + 5.5vh, 100px);
-  background: rgb(46, 46, 46);
-  border-bottom: 1px solid white;
   z-index: 3;
-  transition: 1s;
+  transition: 0.3s;
 }
 .menu-width {
   position: relative;
@@ -20,7 +18,7 @@
   top: 2.5vh;
   height: 40px;
   width: 400px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .main-menu ul {
   display: flex;
@@ -28,17 +26,22 @@
   align-items: center;
   justify-content: space-between;
 }
-.main-menu ul li .lk {
+.main-menu ul li a {
   font-size: 1.2rem;
-  color: rgb(255, 255, 255);
-  /* color: rgb(46, 46, 46); */
+  color: rgb(46, 46, 46);
   padding: 4px 7px;
 }
 
 .sticky {
-  background: rgb(132, 35, 35);
+  background: rgb(46, 46, 46);
+  border-bottom: 2px solid white;
   height: 50px;
+  transition: 1s;
 }
 .posMenu {
   top: 0.5vh;
+  transition: 1s;
+}
+.main-menu ul li .lnk {
+  color: white;
 }
