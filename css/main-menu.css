@@ -47,7 +47,7 @@
 
 .posMenu {
   top: 0.5vh;
-  transition: 1s;
+  transition: 0.3s;
 }
 .main-menu ul li .lnk {
   color: white;
