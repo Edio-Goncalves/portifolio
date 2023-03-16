@@ -17,5 +17,5 @@
   flex-shrink: 0;
   width: 400px;
   height: 100vh;
-  background-image: url(/images/avatar_a.png);
+  background-image: url(../images/avatar_a.png);
 }
