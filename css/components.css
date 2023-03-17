@@ -1,11 +1,11 @@
-main {
-  box-sizing: content-box;
+/* main {
+ box-sizing: content-box;
   position: relative;
   height: 100vh;
   width: 100%;
-  /* overflow: auto; */
-  scroll-snap-type: y mandatory;
-}
+  overflow: auto; 
+  scroll-snap-type: y mandatory; 
+}*/
 
 .main-width {
   box-sizing: content-box;
@@ -23,6 +23,16 @@ main {
   justify-content: center;
   gap: 50px;
 }
+
+@media screen and (max-width: 900px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .main-width {
+    max-width: 95%;
+  }
+}
+
 .main-wrapper.-gap {
   gap: 50px;
 }
@@ -115,6 +125,7 @@ main {
   font-size: 1.3rem;
   line-height: 1.3em;
   font-weight: 300;
+  padding-right: 30px;
 }
 
 /* button */
