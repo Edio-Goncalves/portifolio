@@ -1,6 +1,7 @@
 .colorBk-header {
   /* background-color: #e7e7e7; */
   position: fixed;
+  z-index: 10;
   width: 100%;
 }
 #header {
@@ -15,6 +16,7 @@
 #menu {
   display: flex;
   gap: 0.5rem;
+  z-index: 10;
 }
 
 #menu a {
@@ -28,7 +30,7 @@
   font-family: "Righteous", sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #menu {
     display: block;
     position: absolute;
@@ -37,13 +39,12 @@
     left: 0;
     background-color: #e7e7e7;
     transition: 0.5s;
-    z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(100vh - 70px);
+    height: calc(286px - 70px);
     visibility: visible;
     overflow-y: auto;
   }
