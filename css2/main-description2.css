@@ -117,4 +117,7 @@
 }
 
 @media screen and (max-height: 650px) {
+  .main-description {
+    height: auto;
+  }
 }

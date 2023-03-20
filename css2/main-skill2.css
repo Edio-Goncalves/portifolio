@@ -150,3 +150,12 @@
     height: 60px;
   }
 }
+
+@media (max-height: 650px) {
+  .main-skill {
+    height: auto;
+  }
+  .main-skill .container {
+    padding-top: 50px;
+  }
+}
