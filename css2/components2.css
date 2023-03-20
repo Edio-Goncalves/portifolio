@@ -10,6 +10,7 @@
   font-family: "Righteous", sans-serif;
   background-color: rgb(46, 46, 46);
   color: white;
+  transition: 0.5s;
 }
 
 .main-title.-portfolio {
@@ -49,7 +50,6 @@
 
 .main-title.-habilidades {
   font-size: 2rem;
-  margin-top: 5vw;
   padding: 14px 20px;
   letter-spacing: 10px;
 }
@@ -67,17 +67,20 @@
   font-family: "Work Sans", sans-serif;
   font-size: 1.8rem;
   color: rgb(46, 46, 46);
+  transition: 0.5s;
 }
 .hello {
   font-family: "Work Sans", sans-serif;
   color: rgb(0, 143, 136);
   font-size: 2.5rem;
   font-weight: 500;
+  transition: 0.5s;
 }
 .name {
   font-family: "Righteous", cursive;
   font-size: 2.8rem;
   line-height: 1.2em;
+  transition: 0.5s;
 }
 .about {
   font-family: "Work Sans", sans-serif;
@@ -85,6 +88,7 @@
   line-height: 1.3em;
   font-weight: 300;
   padding-right: 30px;
+  transition: 0.5s;
 }
 
 /* MEDIA ICON */
@@ -94,7 +98,7 @@
   padding-bottom: 5px;
 }
 
-@media screen and (max-width: 650px), screen and (max-height: 500px) {
+@media screen and (max-width: 650px), screen and (max-height: 650px) {
   .main-title.-portfolio {
     line-height: 30px;
   }
@@ -121,5 +125,12 @@
     font-size: 1rem;
     line-height: 1.2em;
     padding-right: 10px;
+  }
+
+  .main-title.-habilidades,
+  .main-title.-project {
+    font-size: 1.5rem;
+    padding: 12px 18px;
+    letter-spacing: 7px;
   }
 }
