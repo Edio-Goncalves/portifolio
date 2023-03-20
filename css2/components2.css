@@ -4,6 +4,7 @@
 }
 
 /* MAIN TITTLE */
+
 .main-title {
   font-size: 4rem;
   font-family: "Righteous", sans-serif;
@@ -18,6 +19,7 @@
   padding: 0px 15px;
   line-height: 40px;
   letter-spacing: 5px;
+  transition: 0.5s;
 }
 .main-title.-portfolio::before {
   box-sizing: border-box;
@@ -90,4 +92,34 @@
   width: 40px;
   transition: 0.1s;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 650px), screen and (max-height: 500px) {
+  .main-title.-portfolio {
+    line-height: 30px;
+  }
+  .main-title.-portfolio::before {
+    height: 30px;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .main-title.-portfolio {
+    font-size: 1rem;
+  }
+  .main-text {
+    font-size: 1.3rem;
+  }
+  .hello {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 2rem;
+    line-height: 1.5em;
+  }
+  .about {
+    font-size: 1rem;
+    line-height: 1.2em;
+    padding-right: 10px;
+  }
 }
