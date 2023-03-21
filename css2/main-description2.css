@@ -9,8 +9,9 @@
 }
 .main-description .img-description {
   display: flex;
-  height: 100%;
   width: 350px;
+  /* height: 100%; */
+  min-height: 100vh;
   flex-shrink: 0;
   background-image: url(../images/avatar_a.png);
   background-color: rgb(251, 246, 194);
@@ -92,7 +93,6 @@
   .main-description .img-description {
     display: none;
     background-image: none;
-    background-color: aqua;
   }
   .main-description .img-description2 {
     display: block;
@@ -119,5 +119,16 @@
 @media screen and (max-height: 650px) {
   .main-description {
     height: auto;
+  }
+  .main-description .img-description {
+    min-height: clamp(500px, 500px + 30vw, 800px);
+  }
+}
+@media screen and (max-height: 650px) {
+  .main-description {
+    height: auto;
+  }
+  .main-description .img-description {
+    min-height: clamp(400px, 400px + 15vw, 670px);
   }
 }

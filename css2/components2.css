@@ -98,7 +98,7 @@
   padding-bottom: 5px;
 }
 
-@media screen and (max-width: 650px), screen and (max-height: 650px) {
+@media screen and (max-width: 900px), screen and (max-height: 650px) {
   .main-title.-portfolio {
     line-height: 30px;
   }
