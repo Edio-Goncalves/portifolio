@@ -54,9 +54,9 @@
   letter-spacing: 10px;
 }
 
-.main-title.-project {
+.main-title.-project,
+.main-title.-contact {
   font-size: 2rem;
-  margin-top: 5vw;
   margin-bottom: 30px;
   padding: 14px 20px;
   letter-spacing: 10px;
@@ -92,10 +92,20 @@
 }
 
 /* MEDIA ICON */
+.wrapper-media {
+  display: flex;
+  gap: 10px;
+}
 .wrapper-media .ico {
-  width: 40px;
+  position: relative;
+  top: 0;
+  width: 45px;
   transition: 0.1s;
   padding-bottom: 5px;
+}
+.wrapper-media .ico:hover {
+  top: -3px;
+  transition: 0.5s cubic-bezier(0.4, -3, 0.4, -3);
 }
 
 @media screen and (max-width: 900px), screen and (max-height: 650px) {
