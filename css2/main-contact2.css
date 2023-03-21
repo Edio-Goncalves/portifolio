@@ -132,7 +132,7 @@
   border-bottom: 1px solid white;
 }
 .main-contact .container .contactForm .formBx .inputBx textarea {
-  height: 125px;
+  min-height: 25vh;
 }
 .main-contact .container .contactForm .formBx .inputBx span {
   position: absolute;
@@ -223,4 +223,59 @@
   font-size: 1.2rem;
   background-color: rgba(82, 82, 82);
   color: white;
+}
+
+.screen-contact {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .main-contact .container .contactInfo {
+    display: none;
+  }
+
+  .main-contact .container .contactForm {
+    width: 100%;
+    border: none;
+  }
+  .main-contact .container .contactForm .Wrapper-form {
+    padding: 0px;
+  }
+  .main-contact .container .contactForm .formBx .inputBx {
+    margin-bottom: 40px;
+  }
+
+  .screen-contact {
+    display: block;
+    width: 100%;
+  }
+
+  .screen-contact ul.info {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .screen-contact ul.info li {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+  .screen-contact ul.info li span:nth-child(1) {
+    width: 25px;
+    min-width: 25px;
+  }
+  .screen-contact ul.info li span:nth-child(1) img {
+    filter: invert(1);
+    max-width: 100%;
+  }
+
+  .screen-contact .wrapper-media {
+    margin-top: 20px;
+  }
 }
