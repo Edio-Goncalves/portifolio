@@ -1,10 +1,11 @@
 .colorBk-contact {
+  position: relative;
   background-color: rgb(73, 73, 73);
   height: 100vh;
 }
 
 .main-contact {
-  padding: 90px 0 0 0;
+  padding: 90px 0 30px 0;
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -18,14 +19,14 @@
 
 .main-contact .container {
   display: flex;
-  min-height: 75vh;
+  /* min-height: 75vh; */
   padding: 0px 30px;
 }
 
 /* lado do info */
 .main-contact .container .contactInfo {
   padding-top: 7vh;
-  height: 68vh;
+  /* height: 68vh; */
   width: 30%;
   display: flex;
   justify-content: space-between;
@@ -76,7 +77,7 @@
 /* lado do form ################################### */
 .main-contact .container .contactForm {
   padding-top: 7vh;
-  height: 68vh;
+  /* height: 68vh; */
   width: 70%;
   display: flex;
   border-left: 2px solid;
@@ -132,7 +133,7 @@
   border-bottom: 1px solid white;
 }
 .main-contact .container .contactForm .formBx .inputBx textarea {
-  min-height: 25vh;
+  min-height: 20vh;
 }
 .main-contact .container .contactForm .formBx .inputBx span {
   position: absolute;
@@ -155,14 +156,6 @@
   font-size: 0.9rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
-}
-
-.footer {
-  font-family: "Poppins";
-  font-size: 0.8rem;
-  color: rgba(192, 192, 192, 0.6);
-  text-align: center;
-  margin-top: 30px;
 }
 
 /* btn enviar */
@@ -277,5 +270,103 @@
 
   .screen-contact .wrapper-media {
     margin-top: 20px;
+  }
+}
+
+/* SCREEN ########## */
+@media screen and (max-width: 700px) {
+  .screen-contact ul.info {
+    display: none;
+  }
+  .main-contact {
+    padding: 60px 0 0px 0;
+    height: calc(100vh - 60px);
+    /* height: 100vh; */
+    justify-content: space-around;
+  }
+
+  .main-contact .wrapper-contact {
+    width: 100%;
+  }
+
+  .main-contact .container {
+    display: flex;
+    min-height: 100%;
+    padding: 0px 0px;
+  }
+
+  /* lado do form ################################### */
+  .main-contact .container .contactForm {
+    padding-top: 0vh;
+  }
+  .main-contact .container .contactForm .Wrapper-form {
+    padding: 0px 20px;
+  }
+  .main-contact .container .contactForm h2 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .main-contact .container .contactForm .formBx .inputBx {
+    margin-bottom: 35px;
+  }
+  .main-contact .container .contactForm .formBx .inputBx input,
+  .main-contact .container .contactForm .formBx .inputBx textarea {
+    padding: 7px 7px;
+    font-size: 1rem;
+  }
+  .main-contact .container .contactForm .formBx .inputBx textarea {
+    min-height: 20vh;
+  }
+  .main-contact .container .contactForm .formBx .inputBx span {
+    padding: 10px 0px 0px 3px;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+  }
+
+  .main-contact .container .contactForm .formBx .inputBx input:focus ~ span,
+  .main-contact .container .contactForm .formBx .inputBx input:valid ~ span,
+  .main-contact .container .contactForm .formBx .inputBx textarea:focus ~ span,
+  .main-contact .container .contactForm .formBx .inputBx textarea:valid ~ span {
+    transform: translatey(-25px);
+    font-size: 0.7rem;
+  }
+
+  /* btn enviar */
+  .main-contact .container .contactForm .formBx .inputBtn span {
+    width: 130px;
+    height: 40px;
+  }
+  .main-contact .container .contactForm .formBx .inputBtn span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s;
+    box-sizing: content-box;
+  }
+
+  .main-contact .container .contactForm .formBx .inputBtn span input {
+    font-size: 0.8rem;
+  }
+  .main-contact .container .contactForm .formBx .inputBtn span input:hover {
+    font-size: 1rem;
+  }
+  .screen-contact .wrapper-media {
+    margin-top: 4vw;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .colorBk-contact {
+    height: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .main-contact {
+    height: auto;
   }
 }
