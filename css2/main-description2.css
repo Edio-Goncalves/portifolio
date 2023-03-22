@@ -1,5 +1,9 @@
 .colorBk-description {
-  background-color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 80%,
+    rgb(255, 255, 220) 120%
+  );
 }
 .main-description {
   height: 100vh;
