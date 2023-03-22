@@ -13,52 +13,44 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css2/reset2.css" />
-    <link rel="stylesheet" href="css2/general2.css" />
-    <link rel="stylesheet" href="css2/components2.css" />
-    <link rel="stylesheet" href="css2/main-menu2.css" />
-    <link rel="stylesheet" href="css2/main-description2.css" />
-    <link rel="stylesheet" href="css2/main-skill2.css" />
-    <link rel="stylesheet" href="css2/main-project2.css" />
-    <link rel="stylesheet" href="css2/main-contact2.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/main-menu.css" />
+    <link rel="stylesheet" href="css/main-description.css" />
+    <link rel="stylesheet" href="css/main-skill.css" />
+    <link rel="stylesheet" href="css/main-project.css" />
+    <link rel="stylesheet" href="css/main-contact.css" />
 
     <script defer src="js/script.js"></script>
     <script defer src="js/script22.js"></script>
-    <script defer src="js/btn-hamburger.js"></script>
   </head>
   <body>
     <main>
       <!-- HEADER MENU -->
-      <div id="scroll" class="colorBk-header">
-        <header id="header" class="main-width">
-          <nav id="nav" class="main-menu">
-            <button id="btn-mobile">
-              Menu
-              <span id="hamburger"></span>
-            </button>
-            <ul id="menu">
+      <header id="scroll" class="wrapper-menu">
+        <div class="menu-width">
+          <nav id="positionMenu" class="main-menu">
+            <ul>
               <li><a id="lnk1" href="#home">Inicio</a></li>
               <li><a id="lnk2" href="#skill">Habilidades</a></li>
               <li><a id="lnk3" href="#project">Projetos</a></li>
               <li><a id="lnk4" href="#contact">Contato</a></li>
             </ul>
           </nav>
-        </header>
-      </div>
+        </div>
+      </header>
 
       <!-- DESCRIPTION -->
-      <section id="home" class="colorBk-description">
-        <div class="main-description main-width">
-          <div class="img-description">
-            <!-- <img src="/images/avatar_a.png" alt="" /> -->
-          </div>
-          <div class="img-description2"></div>
+      <section id="home" class="main-description main-width">
+        <div class="main-wrapper -gap">
+          <div class="img"></div>
           <section class="wrapper-description">
             <h1 class="main-title -portfolio" data-text="MY_PORTFOLIO">
               MY_PORTFOLIO
             </h1>
-
-            <div class="container">
+            <div class="bkScreen810"></div>
+            <div class="-container">
               <div class="main-text">
                 <h4><span class="hello">Olá</span> , eu sou</h4>
 
@@ -76,15 +68,19 @@
                 e quando não está estudando ou trabalhando está trocando ideias
                 com amigos.
               </p>
-              <a class="btn-description" href="#"><span></span> Contate-me</a>
+              <a id="main" class="btn-description" href="#"
+                ><span></span> Contate-me</a
+              >
             </div>
             <div class="wrapper-media">
               <a href="#"
-                ><img class="ico" src="images/linkedin.png" alt=""
+                ><img class="-ico" src="images/linkedin.png" alt=""
               /></a>
-              <a href="#"><img class="ico" src="images/github.png" alt="" /></a>
               <a href="#"
-                ><img class="ico" src="images/whatsapp.png" alt=""
+                ><img class="-ico" src="images/github.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="-ico" src="images/whatsapp.png" alt=""
               /></a>
             </div>
           </section>
@@ -313,7 +309,7 @@
       <!-- CONTACT -->
       <div id="contact" class="colorBk-contact">
         <section class="main-contact main-width">
-          <h1 class="main-title -contact">CONTATO</h1>
+          <h1 class="main-title -project">CONTATO</h1>
           <div class="wrapper-contact">
             <div class="container">
               <div class="contactInfo">
@@ -343,24 +339,25 @@
                 <ul class="wrapper-media">
                   <li>
                     <a href="#"
-                      ><img class="ico" src="images/linkedin.png" alt=""
+                      ><img class="-ico" src="images/linkedin.png" alt=""
                     /></a>
                   </li>
                   <li>
                     <a href="#"
-                      ><img class="ico" src="images/github.png" alt=""
+                      ><img class="-ico" src="images/github.png" alt=""
                     /></a>
                   </li>
                   <li>
                     <a href="#"
-                      ><img class="ico" src="images/whatsapp.png" alt=""
+                      ><img class="-ico" src="images/whatsapp.png" alt=""
                     /></a>
                   </li>
                 </ul>
               </div>
+
               <div class="contactForm">
-                <div class="Wrapper-form">
-                  <h2>Envie uma menssagem</h2>
+                <div class="teste2">
+                  <h2>Envie uma Menssagem</h2>
                   <div class="formBx">
                     <div class="inputBx w50">
                       <input type="text" required />
@@ -387,49 +384,15 @@
                         <input type="submit" value="Enviar" />
                       </span>
                     </div>
-                    <div class="screen-contact">
-                      <div>
-                        <ul class="info">
-                          <li>
-                            <span
-                              ><img src="images/mail.png" alt="Logo do hotmail"
-                            /></span>
-                            <span>ediogoncalvesjr@gmail.com</span>
-                          </li>
-                          <li>
-                            <span
-                              ><img
-                                src="images/call.png"
-                                alt="Logo do whatsapp"
-                            /></span>
-                            <span>(48) 99671 8721</span>
-                          </li>
-                          <li>
-                            <span
-                              ><img
-                                src="images/location.png"
-                                alt="Logo da localização"
-                            /></span>
-                            <span>Araranguá - SC</span>
-                          </li>
-                        </ul>
-                        <div class="wrapper-media">
-                          <a href="#"
-                            ><img class="ico" src="images/linkedin.png" alt=""
-                          /></a>
-                          <a href="#"
-                            ><img class="ico" src="images/github.png" alt=""
-                          /></a>
-                          <a href="#"
-                            ><img class="ico" src="images/whatsapp.png" alt=""
-                          /></a>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <footer class="footer">
+              <div>
+                <h3>©2023 Todos direitos reservados.</h3>
+              </div>
+            </footer>
           </div>
         </section>
       </div>

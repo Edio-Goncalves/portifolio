@@ -1,0 +1,81 @@
+.wrapper-menu {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: clamp(40px, 40px + 5.5vh, 100px);
+  z-index: 3;
+  transition: 0.3s;
+}
+.menu-width {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+}
+.main-menu {
+  position: absolute;
+  right: 0;
+  top: 2.5vh;
+  height: 40px;
+  width: 400px;
+  transition: 0.3s;
+}
+.main-menu ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-menu ul li a {
+  font-size: 1.2rem;
+  color: rgb(46, 46, 46);
+  padding: 4px 10px;
+  transition: 0.5s;
+}
+.main-menu ul li a:hover {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  transition-delay: 0.15s;
+  transition-property: color;
+}
+
+.sticky {
+  background: rgb(46, 46, 46);
+  border-bottom: 2px solid white;
+  height: 50px;
+}
+
+.posMenu {
+  top: 0.5vh;
+  transition: 0.3s;
+}
+.main-menu ul li .lnk {
+  color: white;
+  transition-delay: 0.15s;
+  transition-property: color;
+}
+.main-menu ul li .lnk:hover {
+  color: rgb(46, 46, 46);
+  background-color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper-menu {
+    background-color: rgba(152, 42, 42, 0.1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper-menu {
+    background-color: rgb(46, 46, 46, 0.1);
+  }
+  .menu-width {
+    width: 95%;
+  }
+  .sticky {
+    background: rgb(46, 46, 46);
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

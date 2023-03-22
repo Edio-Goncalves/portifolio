@@ -1,11 +1,9 @@
 .colorBk-contact {
-  position: relative;
   background-color: rgb(73, 73, 73);
-  height: 100vh;
+  height: calc(100vh - 53px);
 }
 
 .main-contact {
-  padding: 90px 0 30px 0;
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -19,18 +17,20 @@
 
 .main-contact .container {
   display: flex;
-  padding: 0px 30px;
+  min-height: 75vh;
 }
 
 /* lado do info */
 .main-contact .container .contactInfo {
-  padding-top: 7vh;
   width: 30%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 80px 0;
 }
-
+.main-contact .container .contactInfo .teste {
+  background-color: aqua;
+}
 .main-contact .container .contactInfo h2 {
   margin-bottom: 30px;
   font-size: 2rem;
@@ -74,20 +74,13 @@
 
 /* lado do form ################################### */
 .main-contact .container .contactForm {
-  padding-top: 7vh;
   width: 70%;
   display: flex;
-  border-left: 2px solid;
-  border-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0)
-    )
-    1 100%;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.main-contact .container .contactForm .Wrapper-form {
+.main-contact .container .contactForm .teste2 {
+  border-left: 2px solid white;
   padding-left: 50px;
 }
 .main-contact .container .contactForm h2 {
@@ -130,7 +123,7 @@
   border-bottom: 1px solid white;
 }
 .main-contact .container .contactForm .formBx .inputBx textarea {
-  min-height: 20vh;
+  height: 125px;
 }
 .main-contact .container .contactForm .formBx .inputBx span {
   position: absolute;
@@ -153,6 +146,14 @@
   font-size: 0.9rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.footer {
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  color: rgba(100, 100, 100, 0.6);
+  text-align: center;
+  padding-bottom: 2vh;
 }
 
 /* btn enviar */
@@ -213,156 +214,4 @@
   font-size: 1.2rem;
   background-color: rgba(82, 82, 82);
   color: white;
-}
-
-.screen-contact {
-  display: none;
-}
-
-@media screen and (max-width: 1050px) {
-  .main-contact .container .contactInfo {
-    display: none;
-  }
-
-  .main-contact .container .contactForm {
-    width: 100%;
-    border: none;
-  }
-  .main-contact .container .contactForm .Wrapper-form {
-    padding: 0px;
-  }
-  .main-contact .container .contactForm .formBx .inputBx {
-    margin-bottom: 40px;
-  }
-
-  .screen-contact {
-    display: block;
-    width: 100%;
-  }
-
-  .screen-contact ul.info {
-    margin-top: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  .screen-contact ul.info li {
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-  }
-  .screen-contact ul.info li span:nth-child(1) {
-    width: 25px;
-    min-width: 25px;
-  }
-  .screen-contact ul.info li span:nth-child(1) img {
-    filter: invert(1);
-    max-width: 100%;
-  }
-
-  .screen-contact .wrapper-media {
-    margin-top: 20px;
-  }
-}
-
-/* SCREEN ########## */
-@media screen and (max-width: 700px) {
-  .screen-contact ul.info {
-    display: none;
-  }
-  .main-contact {
-    padding: 60px 0 0px 0;
-    height: calc(100vh - 60px);
-    justify-content: space-around;
-  }
-
-  .main-contact .wrapper-contact {
-    width: 100%;
-  }
-
-  .main-contact .container {
-    display: flex;
-    min-height: 100%;
-    padding: 0px 0px;
-  }
-
-  /* lado do form ################################### */
-  .main-contact .container .contactForm {
-    padding-top: 0vh;
-  }
-  .main-contact .container .contactForm .Wrapper-form {
-    padding: 0px 20px;
-  }
-  .main-contact .container .contactForm h2 {
-    margin-bottom: 40px;
-    font-size: 1.5rem;
-    line-height: 1rem;
-  }
-
-  .main-contact .container .contactForm .formBx .inputBx {
-    margin-bottom: 35px;
-  }
-  .main-contact .container .contactForm .formBx .inputBx input,
-  .main-contact .container .contactForm .formBx .inputBx textarea {
-    padding: 7px 7px;
-    font-size: 1rem;
-  }
-  .main-contact .container .contactForm .formBx .inputBx textarea {
-    min-height: 20vh;
-  }
-  .main-contact .container .contactForm .formBx .inputBx span {
-    padding: 10px 0px 0px 3px;
-    font-size: 0.8rem;
-    letter-spacing: 0px;
-  }
-
-  .main-contact .container .contactForm .formBx .inputBx input:focus ~ span,
-  .main-contact .container .contactForm .formBx .inputBx input:valid ~ span,
-  .main-contact .container .contactForm .formBx .inputBx textarea:focus ~ span,
-  .main-contact .container .contactForm .formBx .inputBx textarea:valid ~ span {
-    transform: translatey(-25px);
-    font-size: 0.7rem;
-  }
-
-  /* btn enviar */
-  .main-contact .container .contactForm .formBx .inputBtn span {
-    width: 130px;
-    height: 40px;
-  }
-  .main-contact .container .contactForm .formBx .inputBtn span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0;
-    transition: all 0.5s;
-    box-sizing: content-box;
-  }
-
-  .main-contact .container .contactForm .formBx .inputBtn span input {
-    font-size: 0.8rem;
-  }
-  .main-contact .container .contactForm .formBx .inputBtn span input:hover {
-    font-size: 1rem;
-  }
-  .screen-contact .wrapper-media {
-    margin-top: 4vw;
-    justify-content: flex-end;
-  }
-}
-
-@media screen and (max-height: 900px) {
-  .colorBk-contact {
-    height: auto;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .main-contact {
-    height: auto;
-  }
 }
