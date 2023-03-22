@@ -1,7 +1,7 @@
 /* MENU COM STICKY */
 window.addEventListener("scroll", function () {
   const sticky = document.getElementById("scroll");
-  const posMenu = document.getElementById("positionMenu");
+  const posMenu = document.getElementById("nav");
   const lnk1 = document.getElementById("lnk1");
   const lnk2 = document.getElementById("lnk2");
   const lnk3 = document.getElementById("lnk3");
