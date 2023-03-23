@@ -1,21 +1,67 @@
 :root {
-  --color-b-first: #243950;
-  --color-b-second: #365470;
-  --color-b-third: #3e79a5;
-  --color-b-fourth: #7aa9c9;
-  --color-b-fifth: #a7cae3;
-  --color-o-first: #fcc7a4;
-  --color-o-second: #fddbb4;
-  --color-o-third: #ffecb3;
-  --color-o-fourth: #fff3d5;
-  --color-o-fifth: #fffefa;
+  --bg-first: #fff;
+  --bg-second: rgb(255, 255, 220);
+  --bg-third: rgb(245, 255, 255);
 
-  --color-black-first: #000000;
-  --color-black-first-b: rgba(0, 0, 0, 0.2);
-  --color-black-second: #4e5355;
-  --color-black-third: #828282;
+  --menu-first: #fff;
+  --menu-second: rgb(46, 46, 46);
+  --menu-second-a: rgba(0, 0, 0, 0.05);
+  --menu-third: #e7e7e7;
 
-  --color-error: #ba1f33;
-  --color-warning: #ceb02a;
-  --color-success: #62c370;
+  --bg-contact: rgb(73, 73, 73);
+  --bg-contact-second: rgb(82, 82, 82);
+  --bg-contact-second-a: rgba(82, 82, 82, 0.384);
+
+  --color-title-first: rgb(255, 255, 255);
+  --color-title-third: rgb(46, 46, 46);
+  --color-title-second: rgb(0, 143, 136);
+
+  --color-font-first: #fff;
+  --color-font-first-a: rgba(255, 255, 255, 0.5);
+  --color-font-second: rgba(82, 82, 82);
+  --color-font-third: rgb(46, 46, 46);
+
+  --border-first: rgba(255, 255, 255, 0.9);
+  --border-second: rgba(255, 255, 255, 0);
+  --border-shadow-first: rgba(0, 0, 0, 0.1);
+  --border-shadow-second: rgba(0, 0, 0, 0.2);
+
+  --button-first: #fff;
+  --button-second: rgb(0, 143, 136);
+  --button-third: rgb(223, 223, 223);
+  --button-fourth: rgb(73, 73, 73);
+}
+
+.darkmode:root {
+  --bg-first: #fff;
+  --bg-second: rgb(255, 255, 220);
+  --bg-third: rgb(245, 255, 255);
+
+  --menu-first: #fff;
+  --menu-second: rgb(46, 46, 46);
+  --menu-second-a: rgba(0, 0, 0, 0.05);
+  --menu-third: #e7e7e7;
+
+  --bg-contact: rgb(73, 73, 73);
+  --bg-contact-second: rgb(82, 82, 82);
+  --bg-contact-second-a: rgba(82, 82, 82, 0.384);
+
+  --color-title-first: rgb(255, 255, 255);
+  --color-title-third: rgb(46, 46, 46);
+  --color-title-second: rgb(0, 143, 136);
+
+  --color-font-first: #fff;
+  --color-font-first-a: rgba(255, 255, 255, 0.5);
+  --color-font-second: rgba(82, 82, 82);
+  --color-font-third: rgb(46, 46, 46);
+
+  --border-first: rgba(255, 255, 255, 0.9);
+  --border-second: rgba(255, 255, 255, 0);
+  --border-shadow-first: rgba(0, 0, 0, 0.1);
+  --border-shadow-second: rgba(0, 0, 0, 0.2);
+
+  --button-first: #fff;
+  --button-second: rgb(0, 143, 136);
+  --button-third: rgb(223, 223, 223);
+  --button-fourth: rgb(73, 73, 73);
 }
