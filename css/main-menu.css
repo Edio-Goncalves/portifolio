@@ -10,8 +10,8 @@
 }
 
 #scroll.sticky {
-  background: rgb(46, 46, 46);
-  border-bottom: 2px solid white;
+  background: var(--menu-second);
+  border-bottom: 2px solid var(--border-first);
   height: 70px;
 }
 #header {
@@ -38,44 +38,30 @@
   display: block;
   padding: 0.5rem;
   font-size: 2em;
-  color: rgb(46, 46, 46);
+  color: var(--menu-second);
   transition: 0.5s;
 }
 #menu a:hover {
-  color: white;
-  background-color: rgb(46, 46, 46);
+  color: var(--menu-first);
+  background-color: var(--menu-second);
   transition-delay: 0.15s;
   transition-property: color;
 }
 
 #menu a.lnk {
-  /* background-color: transparent; */
-  color: white;
+  color: var(--menu-first);
   transition-delay: 0.15s;
   transition-property: color;
 }
 #menu a.lnk:hover {
-  color: rgb(46, 46, 46);
-  background-color: rgb(255, 255, 255);
+  color: var(--menu-second);
+  background-color: var(--menu-first);
 }
 
 #btn-mobile {
   display: none;
   font-family: "Righteous", sans-serif;
 }
-
-/* 
-.wrapper-menu {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: clamp(40px, 40px + 5.5vh, 100px);
-  z-index: 3;
-  transition: 0.3s;
-}
-
-*/
 
 @media (max-width: 985px) {
   #scroll.sticky {
@@ -101,25 +87,25 @@
     overflow-y: auto;
   }
   #menu a {
-    background-color: #e7e7e7;
+    background-color: var(--menu-third);
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid var(--menu-second-a);
     text-align: right;
     padding-right: 10px;
   }
 
   #menu a.lnk {
-    color: rgb(46, 46, 46);
+    color: var(--menu-second);
     transition: 0.5s;
   }
   #menu a.lnk:hover {
-    color: white;
-    background-color: rgb(46, 46, 46);
+    color: var(--menu-first);
+    background-color: var(--menu-second);
   }
 
   #btn-mobile {
-    color: rgb(255, 255, 255);
+    color: var(--menu-first);
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -128,7 +114,7 @@
     cursor: pointer;
     gap: 0.5rem;
     line-height: 14px;
-    background-color: rgb(46, 46, 46);
+    background-color: var(--menu-second);
   }
   #hamburger {
     color: red;

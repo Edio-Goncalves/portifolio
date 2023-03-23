@@ -1,7 +1,8 @@
 .colorBk-contact {
   position: relative;
-  background-color: rgb(73, 73, 73);
+  background-color: var(--bg-contact);
   height: 100vh;
+  filter: inherit;
 }
 
 .main-contact {
@@ -35,7 +36,7 @@
   margin-bottom: 30px;
   font-size: 2rem;
   line-height: 2.2rem;
-  color: white;
+  color: var(--color-title-first);
   font-weight: 500;
 }
 
@@ -60,7 +61,7 @@
 
 .main-contact .container .contactInfo ul.info li span:nth-child(2) {
   margin-left: 15px;
-  color: white;
+  color: var(--color-font-first);
 }
 
 .main-contact .container .contactInfo ul.sci {
@@ -72,7 +73,7 @@
   margin-left: 10px;
 }
 
-/* lado do form ################################### */
+/* lado do form */
 .main-contact .container .contactForm {
   padding-top: 7vh;
   width: 70%;
@@ -80,10 +81,10 @@
   border-left: 2px solid;
   border-image: linear-gradient(
       to top,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0)
+      var(--border-second),
+      var(--border-first),
+      var(--border-first),
+      var(--border-second)
     )
     1 100%;
 }
@@ -94,7 +95,7 @@
   margin-bottom: 50px;
   font-size: 2rem;
   line-height: 2.2rem;
-  color: white;
+  color: var(--color-font-first);
   font-weight: 500;
 }
 
@@ -118,16 +119,16 @@
 .main-contact .container .contactForm .formBx .inputBx input,
 .main-contact .container .contactForm .formBx .inputBx textarea {
   box-sizing: border-box;
-  background-color: rgba(82, 82, 82, 0.384);
+  background-color: var(--bg-contact-second-a);
   width: 100%;
   resize: none;
   padding: 10px 10px;
   font-size: 1.2rem;
   font-weight: 300;
-  color: white;
+  color: var(--color-font-first);
   border: none;
   outline: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-font-first-a);
 }
 .main-contact .container .contactForm .formBx .inputBx textarea {
   min-height: 20vh;
@@ -137,7 +138,7 @@
   left: 0px;
   top: 0;
   padding: 10px 0px 0px 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-font-first-a);
   pointer-events: none;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -152,7 +153,7 @@
   transform: translatey(-30px);
   font-size: 0.9rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--border-first);
 }
 
 /* btn enviar */
@@ -178,10 +179,10 @@
   span:nth-child(1)::before {
   background: linear-gradient(
     30deg,
-    rgb(223, 223, 223),
-    rgb(73, 73, 73),
-    rgb(73, 73, 73),
-    rgb(223, 223, 223)
+    var(--button-third),
+    var(--button-fourth),
+    var(--button-fourth),
+    var(--button-third)
   );
 }
 
@@ -199,20 +200,20 @@
   height: 100%;
   border: none;
   display: block;
-  background-color: white;
+  background-color: var(--button-first);
   z-index: 10;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  color: rgb(73, 73, 73);
+  color: var(--color-font-second);
   text-transform: uppercase;
 
   transition: all 0.5s;
 }
 .main-contact .container .contactForm .formBx .inputBtn span input:hover {
   font-size: 1.2rem;
-  background-color: rgba(82, 82, 82);
-  color: white;
+  background-color: var(--bg-contact-second);
+  color: var(--button-first);
 }
 
 .screen-contact {
@@ -254,7 +255,7 @@
     gap: 10px;
     align-items: center;
     cursor: pointer;
-    color: white;
+    color: var(--color-font-first);
   }
   .screen-contact ul.info li span:nth-child(1) {
     width: 25px;
@@ -270,7 +271,7 @@
   }
 }
 
-/* SCREEN ########## */
+/* SCREEN */
 @media screen and (max-width: 700px) {
   .screen-contact ul.info {
     display: none;
@@ -291,7 +292,7 @@
     padding: 0px 0px;
   }
 
-  /* lado do form ################################### */
+  /* lado do form */
   .main-contact .container .contactForm {
     padding-top: 0vh;
   }
