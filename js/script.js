@@ -16,4 +16,11 @@ for (var i = 0; i < iconBx.length; i++) {
   });
 }
 
-/* Menu com sticky */
+/* DARK MODE */
+
+const html = document.querySelector("html");
+const checkbox = document.querySelector("#dark-mode");
+
+checkbox.addEventListener("change", function () {
+  html.classList.toggle("dark-mode");
+});
