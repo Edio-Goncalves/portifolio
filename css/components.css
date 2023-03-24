@@ -8,9 +8,10 @@
 .main-title {
   font-size: 4rem;
   font-family: "Righteous", sans-serif;
-  background-color: rgb(46, 46, 46);
-  color: white;
+  background-color: var(--bg-first);
+  color: var(--color-title-first);
   transition: 0.5s;
+  background: var(--bg-title);
 }
 
 .main-title.-portfolio {
@@ -30,8 +31,8 @@
   left: 15px;
   width: 90%;
   height: 40px;
-  color: rgb(255, 255, 255);
-  border-right: 3px solid rgb(255, 255, 255);
+  color: var(--color-title-first);
+  border-right: 3px solid var(--border-first);
   overflow: hidden;
   animation: txtPortifolio 6s linear infinite;
 }
@@ -66,12 +67,12 @@
 .main-text {
   font-family: "Work Sans", sans-serif;
   font-size: 1.8rem;
-  color: rgb(46, 46, 46);
+  color: var(--color-font-third);
   transition: 0.5s;
 }
 .hello {
   font-family: "Work Sans", sans-serif;
-  color: rgb(0, 143, 136);
+  color: var(--color-title-second);
   font-size: 2.5rem;
   font-weight: 500;
   transition: 0.5s;
@@ -89,6 +90,7 @@
   font-weight: 300;
   padding-right: 30px;
   transition: 0.5s;
+  color: var(--color-font-fourth);
 }
 
 /* MEDIA ICON */

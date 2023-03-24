@@ -2,6 +2,7 @@
   --bg-first: #fff;
   --bg-second: rgb(255, 255, 220);
   --bg-third: rgb(245, 255, 255);
+  --bg-title: rgb(46, 46, 46);
 
   --menu-first: #fff;
   --menu-second: rgb(46, 46, 46);
@@ -20,6 +21,7 @@
   --color-font-first-a: rgba(255, 255, 255, 0.5);
   --color-font-second: rgba(82, 82, 82);
   --color-font-third: rgb(46, 46, 46);
+  --color-font-fourth: rgb(23, 23, 23);
 
   --border-first: rgba(255, 255, 255, 0.9);
   --border-second: rgba(255, 255, 255, 0);
@@ -33,9 +35,10 @@
 }
 
 .dark-mode:root {
-  --bg-first: #fff;
-  --bg-second: rgb(255, 255, 220);
-  --bg-third: rgb(245, 255, 255);
+  --bg-first: rgb(46, 46, 46);
+  --bg-second: rgb(37, 37, 57);
+  --bg-third: rgb(24, 24, 34);
+  --bg-title: rgb(46, 46, 46);
 
   --menu-first: #fff;
   --menu-second: rgb(46, 46, 46);
@@ -46,14 +49,15 @@
   --bg-contact-second: rgb(82, 82, 82);
   --bg-contact-second-a: rgba(82, 82, 82, 0.384);
 
-  --color-title-first: rgb(255, 255, 255);
-  --color-title-third: rgb(46, 46, 46);
+  --color-title-first: #fff;
+  --color-title-third: #fff;
   --color-title-second: rgb(0, 143, 136);
 
   --color-font-first: #fff;
   --color-font-first-a: rgba(255, 255, 255, 0.5);
   --color-font-second: rgba(82, 82, 82);
-  --color-font-third: rgb(46, 46, 46);
+  --color-font-third: #fff;
+  --color-font-fourth: #fff;
 
   --border-first: rgba(255, 255, 255, 0.9);
   --border-second: rgba(255, 255, 255, 0);

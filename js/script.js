@@ -16,11 +16,11 @@ for (var i = 0; i < iconBx.length; i++) {
   });
 }
 
-/* DARK MODE */
+/* DARK-MODE */
 
 const html = document.querySelector("html");
-const checkbox = document.querySelector("#dark-mode");
-
-checkbox.addEventListener("change", function () {
+const togglee = document.getElementById("toggle");
+togglee.onclick = function () {
+  togglee.classList.toggle("active");
   html.classList.toggle("dark-mode");
-});
+};
