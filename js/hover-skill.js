@@ -1,4 +1,3 @@
-/* Hover in skill elements */
 var iconBx = document.querySelectorAll(".iconBx");
 var contentBx = document.querySelectorAll(".contentBx");
 
