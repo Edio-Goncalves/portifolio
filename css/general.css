@@ -38,34 +38,19 @@
   --bg-first: rgb(46, 46, 46);
   --bg-second: rgb(37, 37, 57);
   --bg-third: rgb(24, 24, 34);
-  --bg-title: rgb(46, 46, 46);
 
-  --menu-first: #fff;
+  --menu-first: #e7e7e7;
   --menu-second: rgb(46, 46, 46);
   --menu-second-a: rgba(0, 0, 0, 0.05);
   --menu-third: #e7e7e7;
 
-  --bg-contact: rgb(73, 73, 73);
-  --bg-contact-second: rgb(82, 82, 82);
-  --bg-contact-second-a: rgba(82, 82, 82, 0.384);
+  --color-title-first: #e7e7e7;
+  --color-title-third: #e7e7e7;
 
-  --color-title-first: #fff;
-  --color-title-third: #fff;
-  --color-title-second: rgb(0, 143, 136);
+  --color-font-first: #e7e7e7;
+  --color-font-third: #e7e7e7;
+  --color-font-fourth: #e7e7e7;
 
-  --color-font-first: #fff;
-  --color-font-first-a: rgba(255, 255, 255, 0.5);
-  --color-font-second: rgba(82, 82, 82);
-  --color-font-third: #fff;
-  --color-font-fourth: #fff;
-
-  --border-first: rgba(255, 255, 255, 0.9);
-  --border-second: rgba(255, 255, 255, 0);
-  --border-shadow-first: rgba(0, 0, 0, 0.1);
-  --border-shadow-second: rgba(0, 0, 0, 0.2);
-
-  --button-first: #fff;
-  --button-second: rgb(0, 143, 136);
-  --button-third: rgb(223, 223, 223);
-  --button-fourth: rgb(73, 73, 73);
+  --border-shadow-first: rgba(84, 85, 91, 0.05);
+  --border-shadow-second: rgba(136, 136, 136, 0.3);
 }

@@ -55,6 +55,7 @@
   padding: 15px 30px;
   font-family: "Work Sans", sans-serif;
   border: 2px solid var(--button-second);
+  border-radius: 0;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
@@ -62,7 +63,7 @@
   background-color: var(--button-second);
   transition: 1s;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
 }
 .btn-description:hover {
   color: var(--button-second);

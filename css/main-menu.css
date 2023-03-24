@@ -41,11 +41,19 @@
   color: var(--menu-second);
   transition: 0.5s;
 }
+
 #menu a:hover {
   color: var(--menu-first);
   background-color: var(--menu-second);
   transition-delay: 0.15s;
   transition-property: color;
+}
+#menu.active a {
+  color: var(--menu-first);
+}
+#menu.active a:hover {
+  color: var(--menu-second);
+  background-color: var(--menu-first);
 }
 
 #menu a.lnk {
@@ -93,6 +101,13 @@
     border-bottom: 2px solid var(--menu-second-a);
     text-align: right;
     padding-right: 10px;
+  }
+  #menu.active a {
+    color: var(--menu-second);
+  }
+  #menu.active a:hover {
+    color: var(--menu-first);
+    background-color: var(--menu-second);
   }
 
   #menu a.lnk {
