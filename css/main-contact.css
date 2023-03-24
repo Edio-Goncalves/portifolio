@@ -1,7 +1,7 @@
 .colorBk-contact {
   position: relative;
   background-color: var(--bg-contact);
-  height: 100vh;
+  min-height: 100vh;
   filter: inherit;
 }
 
@@ -12,6 +12,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  /* background-color: aqua; */
 }
 
 .main-contact .wrapper-contact {
@@ -217,18 +218,24 @@
   color: var(--button-first);
 }
 
-.screen-contact {
-  display: none;
-}
-
+/* AQUI */
 @media screen and (max-width: 1050px) {
-  .main-contact .container .contactInfo {
-    display: none;
+  .main-contact .container {
+    display: flex;
+    flex-direction: column;
   }
 
+  .main-contact .container .contactInfo {
+    padding-top: 0px;
+    order: 2;
+  }
+  .main-contact .container .contactInfo h2 {
+    display: none;
+  }
   .main-contact .container .contactForm {
     width: 100%;
     border: none;
+    order: 1;
   }
   .main-contact .container .contactForm .Wrapper-form {
     padding: 0px;
@@ -237,19 +244,18 @@
     margin-bottom: 40px;
   }
 
-  .screen-contact {
-    display: block;
+  .main-contact .container .contactInfo {
     width: 100%;
   }
 
-  .screen-contact ul.info {
+  .main-contact .container .contactInfo ul.info {
     margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
   }
-  .screen-contact ul.info li {
+  .main-contact .container .contactInfo ul.info li {
     font-size: 1rem;
     font-weight: 500;
     display: flex;
@@ -257,26 +263,30 @@
     align-items: center;
     cursor: pointer;
     color: var(--color-font-first);
+    margin-left: 0px;
   }
-  .screen-contact ul.info li span:nth-child(1) {
+  .main-contact .container .contactInfo ul.info li span:nth-child(1) {
     width: 25px;
     min-width: 25px;
   }
-  .screen-contact ul.info li span:nth-child(1) img {
+  .main-contact .container .contactInfo ul.info li span:nth-child(1) img {
     filter: invert(1);
     max-width: 100%;
   }
-
-  .screen-contact .wrapper-media {
+  .main-contact .container .contactInfo ul.info li span:nth-child(2) {
+    margin-left: 0px;
+  }
+  .main-contact .container .contactInfo .wrapper-media {
     margin-top: 20px;
   }
 }
 
 /* SCREEN */
 @media screen and (max-width: 700px) {
-  .screen-contact ul.info {
+  .main-contact .container .contactInfo ul.info {
     display: none;
   }
+
   .main-contact {
     padding: 60px 0 0px 0;
     height: calc(100vh - 60px);
@@ -351,7 +361,7 @@
   .main-contact .container .contactForm .formBx .inputBtn span input:hover {
     font-size: 1rem;
   }
-  .screen-contact .wrapper-media {
+  .main-contact .container .contactInfo .wrapper-media {
     margin-top: 4vw;
     justify-content: flex-end;
   }
